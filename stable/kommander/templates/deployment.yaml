@@ -55,10 +55,8 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: LOGOUT_REDIRECT_PATH
-              value: {{ .Values.logoutRedirectPath }}
+              value: {{ .Values.logoutRedirectPath | quote }}
+            {{- if .Values.isKonvoyUI }}
             - name: MODE
-              value: {{ .Values.mode }}
-            - name: CLUSTER_POLLING_INTERVAL
-              value: {{ .Values.clusterPollingInterval }}
-            - name: CLIENT_POLLING_INTERVAL
-              value: {{ .Values.clientPollingInterval }}
+              value: "konvoy"
+            {{- end }}
