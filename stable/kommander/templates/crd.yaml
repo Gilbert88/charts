@@ -12,6 +12,7 @@ metadata:
     heritage: "{{ .Release.Service }}"
   annotations:
     "helm.sh/hook": crd-install
+    "helm.sh/hook-delete-policy": "before-hook-creation"
 spec:
   group: stable.mesosphere.com
   versions:
