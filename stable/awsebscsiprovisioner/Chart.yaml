@@ -5,8 +5,7 @@ name: awsebscsiprovisioner
 maintainers:
   - name: alejandroEsc
   - name: gpaul
-  - name: hectorj2f
-version: 0.2.9
+version: 0.2.3
 kubeVersion: ">=1.13.0"
 home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
 sources:
