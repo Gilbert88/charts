@@ -5,10 +5,10 @@ kind: StorageClass
 metadata:
   name: localvolumeprovisioner-{{ .name }}
   annotations:
-{{- if .isDefault }}
+{{- if .Values.storageclass.isDefault }}
     storageclass.kubernetes.io/is-default-class: "true"
 {{- end }}
-    kubernetes.io/description: Local volume provisioner StorageClass ({{ .name }})
+    kubernetes.io/description: Local volume provisioner StorageClass
 provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: {{ .volumeBindingMode | quote }}
 reclaimPolicy: {{ .reclaimPolicy | quote }}
