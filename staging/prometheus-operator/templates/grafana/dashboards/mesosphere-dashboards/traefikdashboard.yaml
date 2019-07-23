@@ -1,14 +1,14 @@
-{{- if and .Values.mesosphereResources.create .Values.mesosphereResources.dashboards.traefik }}
+{{- if and .Values.mesosphereResources.create .Values.mesosphereResources.dashboards.trafik }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ printf "%s-%s" (include "prometheus-operator.fullname" $) "traefik-dashboard" | trunc 63 | trimSuffix "-" }}
   labels:
     {{- if $.Values.grafana.sidecar.dashboards.label }}
-    {{ $.Values.grafana.sidecar.dashboards.label }}: "1"
-    {{- end }}
-    app: {{ template "prometheus-operator.name" $ }}-grafana
-{{ include "prometheus-operator.labels" $ | indent 4 }}
+      {{ $.Values.grafana.sidecar.dashboards.label }}: "1"
+      {{- end }}
+  app: {{ template "prometheus-operator.name" $ }}-grafana
+  {{ include "prometheus-operator.labels" $ | indent 4 }}
 data:
   traefikdashboard.json: |-
     {
