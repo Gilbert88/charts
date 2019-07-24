@@ -92,7 +92,6 @@ caCerts:
   #   filename: ca2.crt
   #   value: DS1tFA1......X2F
 
-
 nodeSelector: {}
 
 tolerations: []
