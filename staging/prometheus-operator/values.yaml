@@ -56,7 +56,6 @@ mesosphereResources:
     fluentbit: true
     grafana: true
     opsportal: true
-    kibana: true
     kubelet: true
     localvolumeprovisioner: true
     localvolumeusage: true
