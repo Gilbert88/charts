@@ -47,7 +47,7 @@ mesosphereResources:
   create: false
   rules:
     etcd: true
-    velero: false
+    velero: true
   dashboards:
     apiserver: true
     calico: true
