@@ -56,9 +56,9 @@ Create the name of the service account to use
 */}}
 {{- define "gatekeeper.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create -}}
-{{ default (include "gatekeeper.fullname" .) .Values.serviceAccount.name }}
+    {{ default (include "gatekeeper.fullname" .) .Values.serviceAccount.name }}
 {{- else -}}
-{{ default "default" .Values.serviceAccount.name }}
+    {{ default "default" .Values.serviceAccount.name }}
 {{- end -}}
 {{- end -}}
 
@@ -67,25 +67,8 @@ Create the image tag to use
 */}}
 {{- define "gatekeeper.imageTag" -}}
 {{- if .Values.image.tag -}}
-{{ .Values.image.tag }}
+    {{ .Values.image.tag }}
 {{- else -}}
-v{{ .Chart.AppVersion }}
+    v{{ .Chart.AppVersion }}
 {{- end -}}
 {{- end -}}
-
-{{- define "gatekeeper.selfSignedIssuer" -}}
-{{ printf "%s-selfsign" (include "gatekeeper.fullname" .) }}
-{{- end -}}
-
-{{- define "gatekeeper.rootCAIssuer" -}}
-{{ printf "%s-ca" (include "gatekeeper.fullname" .) }}
-{{- end -}}
-
-{{- define "gatekeeper.rootCACertificate" -}}
-{{ printf "%s-ca" (include "gatekeeper.fullname" .) }}
-{{- end -}}
-
-{{- define "gatekeeper.servingCertificate" -}}
-{{ printf "%s-webhook-tls" (include "gatekeeper.fullname" .) }}
-{{- end -}}
-
