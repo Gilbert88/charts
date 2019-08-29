@@ -3,9 +3,9 @@ entries:
   dex-k8s-authenticator:
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.643472384Z
+    created: 2019-08-29T12:53:15.773073888Z
     description: Authenticator for using Dex with Kubernetes
-    digest: 0f6fd996aab1d1f1d479f0f33b4e298829d185678582cd2993eb6747d01c606b
+    digest: d52e4ce9e47ede4d8c24765ef70eb60e419827efc8a01cb34472e23555fd920c
     home: https://github.com/mesosphere/charts
     maintainers:
     - email: mhrabovcin.c@mesosphere.com
@@ -18,7 +18,7 @@ entries:
     version: 1.1.6
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.642877211Z
+    created: 2019-08-29T12:53:15.771927895Z
     description: Authenticator for using Dex with Kubernetes
     digest: e2aa61bd89adcb15a5c7a4e36789437147c79c27fc05f09dc4a5dab1e784bd98
     home: https://github.com/mesosphere/charts
@@ -33,7 +33,7 @@ entries:
     version: 1.1.5
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.642288909Z
+    created: 2019-08-29T12:53:15.771176123Z
     description: Authenticator for using Dex with Kubernetes
     digest: 0d60186d46680159187e5458c24c6ef18cb1e322b9f28b18b95d55fb0790b444
     home: https://github.com/mesosphere/charts
@@ -48,7 +48,7 @@ entries:
     version: 1.1.4
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.641728004Z
+    created: 2019-08-29T12:53:15.770572315Z
     description: Authenticator for using Dex with Kubernetes
     digest: fb7db6ae0baa802c89fb7cdbdcd45eaeb601a29fc4ca39d713a6bd5517d0d02c
     maintainers:
@@ -66,7 +66,7 @@ entries:
     version: 1.1.3
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.64115232Z
+    created: 2019-08-29T12:53:15.769977823Z
     description: Authenticator for using Dex with Kubernetes
     digest: 2714dd1206327a96e151357b24fe7b412e54c5507fb16990d5e199cc20dde64c
     maintainers:
@@ -84,7 +84,7 @@ entries:
     version: 1.1.2
   - apiVersion: v1
     appVersion: v1.1.0
-    created: 2019-08-28T17:53:06.640560586Z
+    created: 2019-08-29T12:53:15.769339354Z
     description: Authenticator for using Dex with Kubernetes
     digest: ef65818aaedebe5053fef11f1184f8255edc5e850859642fe5ce48d764b77b35
     maintainers:
@@ -103,7 +103,24 @@ entries:
   gatekeeper:
   - apiVersion: v1
     appVersion: 3.0.4-beta.1
-    created: 2019-08-28T17:53:06.64440375Z
+    created: 2019-08-29T12:53:15.774490408Z
+    description: Gatekeeper - Policy Controller for Kubernetes
+    digest: fa78f9c274eefd42fd26c9b88949fa05c3eed3314c7ab6b7def582cd9f523ca2
+    home: https://github.com/open-policy-agent/gatekeeper
+    icon: https://www.openpolicyagent.org/img/opa-logo.svg
+    maintainers:
+    - email: jimmidyson@gmail.com
+      name: jimmidyson
+    name: gatekeeper
+    sources:
+    - https://github.com/open-policy-agent/gatekeeper
+    tillerVersion: '>=2.10.0'
+    urls:
+    - https://mesosphere.github.io/charts/staging/gatekeeper-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v1
+    appVersion: 3.0.4-beta.1
+    created: 2019-08-29T12:53:15.77399244Z
     description: Gatekeeper - Policy Controller for Kubernetes
     digest: e2d332137417d314db0401aa194c86350ac1fcc5c659b0d382b59bcc911f358a
     home: https://github.com/open-policy-agent/gatekeeper
@@ -120,7 +137,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 3.0.4-beta.1
-    created: 2019-08-28T17:53:06.643876104Z
+    created: 2019-08-29T12:53:15.773509045Z
     description: Gatekeeper - Policy Controller for Kubernetes
     digest: 46cfcc10dd9b7f9a172237f33bd57097888e96bf90c457884234b61dba7d0c16
     home: https://github.com/open-policy-agent/gatekeeper
@@ -138,10 +155,10 @@ entries:
   knative:
   - apiVersion: v1
     appVersion: v0.7.1
-    created: 2019-08-28T17:53:06.647491051Z
+    created: 2019-08-29T12:53:15.77671745Z
     description: Kubernetes-based platform to build, deploy, and manage modern serverless
       workloads
-    digest: 07e4977663bdc8b74fa1b0c76af28496cebef4a6b8927f09861f38ec431b9232
+    digest: e8b00021f959828394044e94702c8de8bb279f90d02ee4b2dbd864f54e7cd303
     home: https://knative.dev/
     icon: https://raw.githubusercontent.com/knative/docs/master/docs/images/logo/rgb/knative-logo-rgb.jpg
     maintainers:
@@ -153,10 +170,10 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.740141843Z
+    created: 2019-08-29T12:53:15.88164256Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
-    digest: 2343c9c8543be592e0f7671ac4188679cb322c6fd5217bc718ba0ff5828cb419
+    digest: e73a8319e02c45cdaf8e35706930411abf264a3cfcfb31a94c63f9caa34ed7dd
     engine: gotpl
     home: https://github.com/coreos/prometheus-operator
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
@@ -175,7 +192,7 @@ entries:
     version: 5.10.8
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.730348924Z
+    created: 2019-08-29T12:53:15.87089516Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: ad37143ebb687bb1ac9529da72c97f423820a0d755778f74c71c35e6db16d0ce
@@ -197,7 +214,7 @@ entries:
     version: 5.10.7
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.720286233Z
+    created: 2019-08-29T12:53:15.860119864Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: 88c4250a6a28dfc9a249b8b17bbb3c6209de270ad6721c9e79aa63361b7b5ecc
@@ -219,7 +236,7 @@ entries:
     version: 5.10.6
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.710650174Z
+    created: 2019-08-29T12:53:15.845063955Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: 9bdd15570e4c9bb6d9fe6fb58f9f51948ff1ad3c650b84b8e3837e8a898b1cd2
@@ -241,7 +258,7 @@ entries:
     version: 5.10.5
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.700566525Z
+    created: 2019-08-29T12:53:15.832598798Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: 07d9a370120ebf873e0e4f02ae7588a874bb13aa133dd4dbb2c761e7356e0d1e
@@ -263,7 +280,7 @@ entries:
     version: 5.10.4
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.690276359Z
+    created: 2019-08-29T12:53:15.821864539Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: adb71ee73a50c2ab5f0e229fe93267f1f2af6480d00f8bae43fa4e50a5ec61fc
@@ -285,7 +302,7 @@ entries:
     version: 5.10.3
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.679542539Z
+    created: 2019-08-29T12:53:15.810798228Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: 03a9f9b0f3f314c36ade5d4c0753907f270e4e5ca8093381aa013c26f34a7d1a
@@ -307,7 +324,7 @@ entries:
     version: 5.10.2
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.668426981Z
+    created: 2019-08-29T12:53:15.799399493Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: 1263d0f1261bfc84c34504c3f44bcb2e1d936551a733aa8fe31effd3f9035266
@@ -329,7 +346,7 @@ entries:
     version: 5.10.1
   - apiVersion: v1
     appVersion: 0.29.0
-    created: 2019-08-28T17:53:06.658149708Z
+    created: 2019-08-29T12:53:15.788054282Z
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: c34186f40539eace19bd69793140e4bd79572362b68881f22eb99466079485e2
@@ -352,7 +369,7 @@ entries:
   test:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-08-28T17:53:06.740399274Z
+    created: 2019-08-29T12:53:15.881905294Z
     description: A Helm chart for Kubernetes
     digest: d07d36886354e77838f74ca60211e8246dd4575267e59527ede41513b5cc1ae6
     name: test
@@ -362,10 +379,10 @@ entries:
   traefik:
   - apiVersion: v1
     appVersion: 1.7.12
-    created: 2019-08-28T17:53:06.741635711Z
+    created: 2019-08-29T12:53:15.883202921Z
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
-    digest: e95d6862e500ff5e5eb4ac002f98e5a018604841e028b14f0f478fd0ec3f42dd
+    digest: 22634b192d4b070bc453f79af2f384cf4677bc105ac0cf461e421e09e35ab25b
     engine: gotpl
     home: https://traefik.io/
     icon: https://docs.traefik.io/img/traefik.logo.png
@@ -393,10 +410,10 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.745159957Z
+    created: 2019-08-29T12:53:15.885755383Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
-    digest: 5cd1b7c0bc0c8e9611c3f851168907e6bea1bca5f175bad84da51dad051e63d6
+    digest: cce2a867ccb0a92b20821f1e7872bfa063c00b65f11f0106ae18b84b496f3cb4
     home: https://github.com/jongiddy/traefik-forward-auth
     keywords:
     - traefik-forward-auth
@@ -411,7 +428,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.744632294Z
+    created: 2019-08-29T12:53:15.885301125Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
     digest: 00fcc7e35fc3ca79c8dbfa6da2f4e8fecac63b33cb8c20674e649a38bdd61d73
@@ -429,7 +446,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.743674414Z
+    created: 2019-08-29T12:53:15.884859577Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
     digest: 319e36602dec4508c19a3b106703730a3cc4042905cc60acb59339bb1d2c0c1a
@@ -447,7 +464,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.742982962Z
+    created: 2019-08-29T12:53:15.884450975Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
     digest: c58c8f7bdd0ee2d267809e9089d32cdcef7e81f614d3f4bbc730b884bc2620df
@@ -465,7 +482,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.74257014Z
+    created: 2019-08-29T12:53:15.884027351Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
     digest: c88663f8cfca74df65d9a298fe59a649aa01f096edf85bbfa3cd4295b3d169e1
@@ -483,7 +500,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: latest
-    created: 2019-08-28T17:53:06.74217055Z
+    created: 2019-08-29T12:53:15.883605412Z
     description: Minimal forward authentication service that provides OIDC based login
       and authentication for the traefik reverse proxy
     digest: f825b48d33eb5ebf688b510b547ea2f72d04b513f2aae03d4aa4edfc83328991
@@ -502,9 +519,9 @@ entries:
   velero:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-08-28T17:53:06.750477147Z
+    created: 2019-08-29T12:53:15.891396446Z
     description: A Helm chart for velero
-    digest: f5df2fcc6d95902b1994351e7f73550298520c05f00f6a73264f009e73432de4
+    digest: b9fc3bb7a3b0b7d450e893749972b649d8828fdb9630a7d94cad052844a8347d
     home: https://github.com/heptio/velero
     icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
     maintainers:
@@ -525,7 +542,7 @@ entries:
     version: 2.2.4
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-08-28T17:53:06.749720237Z
+    created: 2019-08-29T12:53:15.890586642Z
     description: A Helm chart for velero
     digest: 5664b64db004d6da7e7904453ae0fbe806232fa9208eb30742f88b7ac26bdd25
     home: https://github.com/heptio/velero
@@ -548,7 +565,7 @@ entries:
     version: 2.2.3
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2019-08-28T17:53:06.748949355Z
+    created: 2019-08-29T12:53:15.889791084Z
     description: A Helm chart for velero
     digest: 6535cdc66856ed7eb74b30fdcecba995f9701b89a04a9da28fd4830d9171c5f9
     home: https://github.com/heptio/velero
@@ -571,7 +588,7 @@ entries:
     version: 2.2.2
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2019-08-28T17:53:06.748185113Z
+    created: 2019-08-29T12:53:15.888991417Z
     description: A Helm chart for velero
     digest: 064ba88232436c98bf435ac9202792907149e0226532c86f97c29f953e2a1136
     home: https://github.com/heptio/velero
@@ -594,7 +611,7 @@ entries:
     version: 2.2.1
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2019-08-28T17:53:06.747404956Z
+    created: 2019-08-29T12:53:15.888202486Z
     description: A Helm chart for velero
     digest: c7222c0d16638eca14deed9c38c877931a9857e12c817d3db9feafff2f90a7bb
     home: https://github.com/heptio/velero
@@ -617,7 +634,7 @@ entries:
     version: 2.2.0
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2019-08-28T17:53:06.746653213Z
+    created: 2019-08-29T12:53:15.88736413Z
     description: A Helm chart for velero
     digest: 94f0397a43ecac7e621c242e6fb8c61f5c322d6bbd9fd1413e17fe24956f33e1
     home: https://github.com/heptio/velero
@@ -640,7 +657,7 @@ entries:
     version: 2.1.3
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2019-08-28T17:53:06.745911424Z
+    created: 2019-08-29T12:53:15.886547612Z
     description: A Helm chart for velero
     digest: fab1defd2987463b4be58a2d90e8f7dabbcc444e9d9fe393b7aa1b232c1b426c
     home: https://github.com/heptio/velero
@@ -661,4 +678,4 @@ entries:
     urls:
     - https://mesosphere.github.io/charts/staging/velero-2.1.2.tgz
     version: 2.1.2
-generated: 2019-08-28T17:53:06.639964547Z
+generated: 2019-08-29T12:53:15.768672119Z
